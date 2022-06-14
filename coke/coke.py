@@ -9,14 +9,12 @@
 
 def main():
 
-    global amount
     amount = 50
-    coke()
+    coke(amount)
     ...
 
-def coke():
+def coke(amount):
 
-    global amount
     print(f"Amount Due: {amount}")
 
     while amount <= 50 and amount >= 0:

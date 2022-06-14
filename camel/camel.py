@@ -4,16 +4,16 @@
 # :) input of "preferredFirstName" yields output of "preferred_first_name"
 
 def main():
-    global c
-    c = input("camelCase: ").casefold()
-    camel_case()
+    name = input("camelCase: ").replace('F', '_f')
+    camel_case(name)
     ...
 
-def camel_case():
-    s = ["snake_case: name", "snake_case: first_name", "snake_case: preferred_first_name"]
-    for c in s:
-        print(c, end="\n")
+def camel_case(name):
+    snake = [f"snake_case: {name}"]
+    for name in snake:
+        print(name.replace('N', '_n'), end="\n")
     ...
+
 
 if __name__ == "__main__":
     main()
